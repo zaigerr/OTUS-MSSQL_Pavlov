@@ -103,7 +103,7 @@ TODO:
 ;WITH tempcte2 as (
 select d.CustomerID, d.PackedByPersonID from Sales.Invoices d where d.OrderID in (
 select b.OrderID from Sales.OrderLines b where b.StockItemID in (
-select top 3 a.StockItemID from Warehouse.StockItems a order by a.UnitPrice desc)
+select top 3 with ties a.StockItemID from Warehouse.StockItems a order by a.UnitPrice desc)
 )
 )
 select Distinct f.DeliveryCityID,g.CityName,h.FullName from tempcte2 e 
@@ -113,7 +113,7 @@ join Application.People h on h.PersonID=e.PackedByPersonID
 
 /*--2 вариант--*/
 ;WITH tempcte3 as (
-select top 3 a.StockItemID from Warehouse.StockItems a order by a.UnitPrice desc
+select top 3 with ties a.StockItemID from Warehouse.StockItems a order by a.UnitPrice desc
 )
 , tempcte4 as
 (select distinct d.DeliveryCityID,c.PackedByPersonID,b.StockItemID from Sales.OrderLines b
@@ -127,7 +127,7 @@ join Application.People h on h.PersonID=f.PackedByPersonID
 
 /*--3 вариант--*/
 ;WITH stock_id as (
- select top 3 a.StockItemID from Warehouse.StockItems a order by a.UnitPrice desc)
+ select top 3 with ties a.StockItemID from Warehouse.StockItems a order by a.UnitPrice desc)
 ,order_id as (
  select c.OrderID from stock_id b join Sales.OrderLines c on b.StockItemID=c.StockItemID)
  ,cus_id as (
