@@ -337,3 +337,26 @@ SELECT	 StockItemID
 from Warehouse.StockItems 
 cross APPLY OPENJSON(CustomFields, '$.Tags') as qw
 where qw.value= 'Vintage'
+
+--20/05/2024----------------------------------------------------------------------
+--Добавил еще вариант решения 
+;with	temp_tag as (
+select	 a.StockItemID
+		,a.StockItemName
+		,c.result
+		from Warehouse.StockItems a
+cross apply (select * from openjson(a.CustomFields) with(tag nvarchar(max) '$.Tags' as json)) b --обязательно в with надо выбрать 'as json' так как по ключу Tags это array 
+cross apply (select * from openjson(b.tag) with(result nvarchar(64)'$')) c
+					)
+		,temp_agg as(
+select	 d.StockItemID
+		,STRING_AGG (d.result, ',') as str_agg
+		from temp_tag d
+		group by d.StockItemID
+					)
+select	 e.StockItemID
+		,e.StockItemName
+		,f.str_agg
+from temp_tag e
+join temp_agg f on e.StockItemID=f.StockItemID
+where e.result = 'Vintage'
