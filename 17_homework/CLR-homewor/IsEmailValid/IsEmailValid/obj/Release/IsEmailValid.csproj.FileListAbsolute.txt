@@ -1,0 +1,5 @@
+C:\Temp\IsEmailValid\IsEmailValid\bin\Release\IsEmailValid.dll
+C:\Temp\IsEmailValid\IsEmailValid\bin\Release\IsEmailValid.pdb
+C:\Temp\IsEmailValid\IsEmailValid\obj\Release\IsEmailValid.csproj.CoreCompileInputs.cache
+C:\Temp\IsEmailValid\IsEmailValid\obj\Release\IsEmailValid.dll
+C:\Temp\IsEmailValid\IsEmailValid\obj\Release\IsEmailValid.pdb

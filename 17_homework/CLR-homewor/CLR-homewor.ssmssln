@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# SQL Server Management Studio Solution File, Format Version 19.00
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "CLR-homewor", "CLR-homewor\CLR-homewor.ssmssqlproj", "{21BAAE53-6EBC-4A98-9962-7C8F570A0869}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21BAAE53-6EBC-4A98-9962-7C8F570A0869}.Default|Default.ActiveCfg = Default
+		{FD4C86E6-DB01-46B1-8B01-515913ECD9C6}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {436558E4-0FC0-4A81-BC7F-8CB4268152C6}
+	EndGlobalSection
+EndGlobal
