@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Service Broker">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="SASHASAN:sa">
+          <Created>2025-02-21T21:23:02.3428684+04:00</Created>
+          <Type>SQL</Type>
+          <Server>SASHASAN</Server>
+          <UserName>sa</UserName>
+          <Authentication>SQL</Authentication>
+          <InitialDB />
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName />
+        </ConnectionNode>
+        <ConnectionNode Name="SASHASAN:SASHASAN\PDA">
+          <Created>2025-02-21T21:23:19.0874234+04:00</Created>
+          <Type>SQL</Type>
+          <Server>SASHASAN</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB>WideWorldImporters</InitialDB>
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="00_Задание.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SASHASAN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SASHASAN</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>00_Задание.sql</FullPath>
+        </FileNode>
+        <FileNode Name="01_Включение Брокер.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SASHASAN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SASHASAN</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>01_Включение Брокер.sql</FullPath>
+        </FileNode>
+        <FileNode Name="02_Тип Сообщений.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SASHASAN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SASHASAN</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>02_Тип Сообщений.sql</FullPath>
+        </FileNode>
+        <FileNode Name="03_Контракт.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SASHASAN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SASHASAN</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>03_Контракт.sql</FullPath>
+        </FileNode>
+        <FileNode Name="04_Службы и очереди.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SASHASAN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SASHASAN</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>04_Службы и очереди.sql</FullPath>
+        </FileNode>
+        <FileNode Name="05_Таблица Отчетов.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SASHASAN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SASHASAN</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>05_Таблица Отчетов.sql</FullPath>
+        </FileNode>
+        <FileNode Name="06_Процедура запроса (Инициатор).sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SASHASAN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SASHASAN</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>06_Процедура запроса (Инициатор).sql</FullPath>
+        </FileNode>
+        <FileNode Name="07_Процедура обработки (ответ).sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SASHASAN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SASHASAN</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>07_Процедура обработки (ответ).sql</FullPath>
+        </FileNode>
+        <FileNode Name="08_Процедура ответа Таргету.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SASHASAN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SASHASAN</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>08_Процедура ответа Таргету.sql</FullPath>
+        </FileNode>
+        <FileNode Name="09_Настраиваем очереди ручной режим.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SASHASAN:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SASHASAN</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>09_Настраиваем очереди ручной режим.sql</FullPath>
+        </FileNode>
+        <FileNode Name="10_тестируем_ручной режим.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SASHASAN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SASHASAN</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>10_тестируем_ручной режим.sql</FullPath>
+        </FileNode>
+        <FileNode Name="11_Очередь Автомат на 1 поток.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SASHASAN:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SASHASAN</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>11_Очередь Автомат на 1 поток.sql</FullPath>
+        </FileNode>
+        <FileNode Name="12_Тестируем авт режим.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SASHASAN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SASHASAN</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>12_Тестируем авт режим.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>

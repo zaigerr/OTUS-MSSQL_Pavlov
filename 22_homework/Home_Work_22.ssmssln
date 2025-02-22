@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# SQL Server Management Studio Solution File, Format Version 19.00
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Service Broker", "Service Broker\Service Broker.ssmssqlproj", "{53B3A19B-A69D-4F2F-A72F-C76928FA48B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53B3A19B-A69D-4F2F-A72F-C76928FA48B3}.Default|Default.ActiveCfg = Default
+		{DE92D7EA-DC9A-49B2-9487-78A814A16BF8}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3D5F2BD-B8A7-4BEB-A515-82FAAD88CA39}
+	EndGlobalSection
+EndGlobal
