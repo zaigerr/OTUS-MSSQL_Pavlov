@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="2_Пользователи и Права доступа">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="SASHASAN:SASHASAN\PDA">
+          <Created>2025-03-09T13:31:51.0793869+04:00</Created>
+          <Type>SQL</Type>
+          <Server>SASHASAN</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB />
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName />
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="2.1 Таблицы_Индексы.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SASHASAN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SASHASAN</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>2.1 Таблицы_Индексы.sql</FullPath>
+        </FileNode>
+        <FileNode Name="2.2 Процедуры.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SASHASAN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SASHASAN</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>2.2 Процедуры.sql</FullPath>
+        </FileNode>
+        <FileNode Name="2.3 Триггеры.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SASHASAN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SASHASAN</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>2.3 Триггеры.sql</FullPath>
+        </FileNode>
+        <FileNode Name="2.4 Наполнение Таблиц.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SASHASAN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SASHASAN</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>2.4 Наполнение Таблиц.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>

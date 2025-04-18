@@ -1,3 +1,5 @@
+USE WebCentre;
+GO
 CREATE TABLE [Web].[RequestHead] (
   [id] int  IDENTITY(1,1) NOT NULL,
   [NameRequest] nvarchar(255) NULL,
@@ -26,14 +28,10 @@ CREATE TABLE Web.RequestElements (
     Prodid nvarchar(64) NOT NULL,
     ProdName NVARCHAR(1024),
 	[Quantity] int NOT NULL,
-    Comment NVARCHAR(MAX),
     [FileName] NVARCHAR(500),
 	Changed int ,
 	Mark bit,
     Part_id char(32), -- Ссылка на BSPartStatusHistory
-	CommentAuthorId int NULL,
-	CommentCreatedAt  DATETIME2,
-	Approval_state int,
 	Version ROWVERSION,
     SysStartTime DATETIME2 GENERATED ALWAYS AS ROW START,
     SysEndTime DATETIME2 GENERATED ALWAYS AS ROW END,
@@ -61,27 +59,5 @@ CREATE TABLE Web.BSPartCommentsHistory (
     CreatedAt DATETIME2 
 );
 GO
-
-CREATE TRIGGER TR_BSPart_Comments_History
-ON Web.RequestElements
-AFTER UPDATE
-AS
-BEGIN
-    SET NOCOUNT ON;
-
-    -- Если изменился комментарий или статус
-    INSERT INTO Web.BSPartCommentsHistory (Part_id, Comment, AuthorId, Approval_state, CreatedAt)
-    SELECT 
-        i.Part_id, 
-        i.Comment, 
-        i.CommentAuthorId,
-		i.Approval_state,
-        i.CommentCreatedAt
-    FROM 
-        inserted i
-    INNER JOIN 
-        deleted d ON i.id = d.id
-    WHERE 
-        (i.Comment <> d.Comment OR (i.Comment IS NULL AND d.Comment IS NOT NULL)) OR i.Approval_state <> d.Approval_state;
-
-END;
+ALTER TABLE Web.BSPartCommentsHistory
+ADD CONSTRAINT [fk_Approval_state_] FOREIGN KEY (Approval_state) REFERENCES [Application].ApprovalState([status]);

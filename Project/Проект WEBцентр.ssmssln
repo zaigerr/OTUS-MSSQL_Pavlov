@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# SQL Server Management Studio Solution File, Format Version 19.00
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "1_Создание базы WebCentre", "1_Создание базы WebCentre\1_Создание базы WebCentre.ssmssqlproj", "{E19DCD1C-56D0-4813-B555-4C1E459E63F2}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "2_Пользователи и Права доступа", "2_Пользователи и Права доступа\2_Пользователи и Права доступа.ssmssqlproj", "{CD6F0ED1-1687-48A4-A7B1-7AFE2A34CB1D}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "3_Корзина", "3_Корзина\3_Корзина.ssmssqlproj", "{0A16BB82-7360-458B-9B06-552657D0F380}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "4_Заказ", "4_Заказ\4_Заказ.ssmssqlproj", "{9C697850-8A6A-4931-A9AD-6DC0A945CA4E}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "6_Service_Broker", "6_Service_Broker\6_Service_Broker.ssmssqlproj", "{3144F40A-2171-41D3-91CF-B38AA5F5FB20}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E19DCD1C-56D0-4813-B555-4C1E459E63F2}.Default|Default.ActiveCfg = Default
+		{CD6F0ED1-1687-48A4-A7B1-7AFE2A34CB1D}.Default|Default.ActiveCfg = Default
+		{0A16BB82-7360-458B-9B06-552657D0F380}.Default|Default.ActiveCfg = Default
+		{9C697850-8A6A-4931-A9AD-6DC0A945CA4E}.Default|Default.ActiveCfg = Default
+		{3144F40A-2171-41D3-91CF-B38AA5F5FB20}.Default|Default.ActiveCfg = Default
+		{214672FE-C37A-4DC3-9831-44D702C4245D}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {344A5C54-FD6F-4E70-936E-69F547AA4CD3}
+	EndGlobalSection
+EndGlobal
